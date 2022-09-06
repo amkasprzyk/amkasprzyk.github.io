@@ -1,0 +1,175 @@
+/* ---------- Body ---------- */
+
+body
+{
+	background:white;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	margin-left: 7em;
+	margin-right: 7em;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	line-height: 1.4em;
+	font-size: small;
+}
+
+/* ---------- Links ---------- */
+
+a
+{
+	text-decoration:none;
+	border:0px;
+}
+
+a:link
+{
+	border-bottom:1px dotted #AAA;
+	color:#444;
+}
+
+a:visited
+{
+	border-bottom:1px dotted #AAA;
+	color:#444;
+}
+
+a:hover
+{
+	border-bottom:1px solid black;
+	color:#444;
+}
+
+/* ---------- Lists ---------- */
+
+ul
+{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+li
+{
+    list-style: none;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+/* ---------- Headings ---------- */
+
+h1
+{
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-size: 22px;
+	text-align: center;
+}
+
+h2
+{
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-size: 14px;
+	text-align: center;
+}
+
+h3
+{
+	text-transform: uppercase;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 2em;
+}
+
+/* ---------- Sections ---------- */
+
+.header
+{
+    padding-top: 1em;
+    margin-bottom: 2em;
+    border-top: 1px solid black;
+}
+
+.titlesandabstracts
+{
+    padding-top: 2em;
+    border-top: 1px solid black;
+	text-transform: uppercase;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.description
+{
+    text-align: justify;
+    padding-left: 7em;
+    padding-right: 7em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.schedule table
+{
+    border-collapse: collapse;
+}
+
+.schedule td
+{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border-right: dotted 1px #CCCCCC;
+}
+
+.schedule .empty
+{
+    border: none;
+}
+
+.schedule .heading
+{
+    font-weight: bold;
+    border-bottom: solid black 1px;
+    border-right: none;
+}
+
+.schedule .time
+{
+    border-right: solid black 1px;
+}
+
+.schedule .odd
+{
+    border-top: dotted 1px #CCCCCC;
+    background: #EEEEEE;
+}
+
+
+ul.talk {
+    padding: 0px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin: 0px;
+}
+
+.talk li {
+    list-style-type: none;
+}
+
+.talk li.speaker {
+    margin-top: 0.25em;
+    padding-top: 0.25em;
+    border-top: 1px dotted #CCCCCC;
+    font-weight: bold;
+}
+
+.talk li.title {
+    padding-top: 0.25em;
+    font-style: italic;
+}
+
+.talk li.abstract {
+    padding-top: 0.25em;
+}

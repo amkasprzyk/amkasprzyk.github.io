@@ -1,0 +1,21 @@
+Possible Topics
+---------------
+1) What have Groebner bases got to do with robotics?
+
+2) Groebner bases and the graph colouring problem.
+
+A graph is a collection of vertices connected by edges (this use of the word ``graph'' it totally distinct from the more familiar meaning). Many problems can be expressed as a graph, where the problem reduces to assigning colours to each of the vertices such that no two vertices connected by an edge have the same colour. If the number of colours you can use is limited, is it possible to colour the vertices in such a fashion? Is there a systematic way of finding a solution? This is called the graph colouring problem.
+
+Groebner bases offer a way of solving the graph colouring problem. You should explain how this is done. Make sure that you explain the theory, and give plenty of examples. An entertaining (if somewhat impractical) application is in solving Sudoku puzzles.
+
+3) Numerical methods and Groebner bases.
+
+Given a system of polynomial equations over $\C$, a combination of Groebner bases and techniques from numerical methods can be used to find all possible solutions. Numerical methods can then be used to solve for one variable at a time from a Groebner basis. You should explore how numerical methods can be used in this way, as well as providing implementations (in Maple or some other language) of the key algorithms. Make sure that you test your code on plenty of examples.
+
+4) Groebner basis algorithms.
+
+There are several different algorithms for calculating a Groebner basis; for example, the Buchberger algorithm, and the Faugere F4 algorithm based on sparse linear algebra techniques. How do the different algorithms work? Do non-commutative algorithms exist? Is there any possibility for developing algorithms which take advantage of the multiple CPU cores available on most modern computers?
+
+5) The contributions of Emmy Noether.
+
+Emmy Noether was an astonishing mathematician, overcoming the prejudices of the time to contribute a staggering quantity of research. You should write a survey of her contributions to commutative algebra.

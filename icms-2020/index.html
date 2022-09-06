@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<!-- Page Title -->
+<title>ICMS 2020 Session: Databases in Mathematics</title>
+</head>
+<body>
+<h1 class="title">ICMS 2020 Session: Databases in Mathematics</h1>
+
+<!-- Page Content -->
+<p>
+    This session is part of <a href="http://www.iaa.tu-bs.de/AppliedAlgebra/ICMS2020/ICMS2020.html">ICMS 2020</a>, to be held virtually (see the update below) <strike>in Braunschweig, Germany</strike>, 13-16 July 2020.
+</p>
+<p>
+    Big Data is becoming increasingly important in fundamental mathematics research, with the production and manipulation of large datasets playing an essential role. The subject is in the throes of a data revolution, with new theoretical results being driven by millions of computer experiments which produce terabytes of data stored in huge problem-specific databases. Although the information contained in these databases is of enormous importance, thorough understanding of the datasets is often hindered by the poor performance of off-the-shelf database technologies in answering the types of broad unstructured queries of interest to mathematicians. The aim of this session is to bring together experts working with and creating large datasets in Pure Mathematics. We will explore the questions asked by these researchers, discuss the database systems they have developed, and their integration with existing Computer Algebra Systems.
+</p>
+<p>
+    Session organised by <a href="http://homepages.warwick.ac.uk/staff/G.Brown/">Gavin Brown</a>, <a href="http://coates.ma.ic.ac.uk">Tom Coates</a>, and <a href="../index.html">Alexander Kasprzyk</a>.
+</p>
+
+<h1 class="title">Update on COVID-19</h1>
+<p>
+Due to the COVID-19 pandemic, ICMS 2020 will now be a virtual conference, with session talks held online. Further information about the virtual format of ICMS 2020 can be <a href="http://www.iaa.tu-bs.de/AppliedAlgebra/ICMS2020/ICMS2020_LocalInfo.html">found here</a>.
+</p>
+
+<!-- Titles and Abstracts -->
+<h1 class="title">Talks and Abstracts</h1>
+<ul class="seminar">
+    <li>
+        <ul class="talk">
+            <li class="workshopspeaker"><a href="http://www.iaa.tu-bs.de/beick/">Bettina Eick</a> (TU Braunschweig)</li>
+            <li class="title">The Small Groups Library</li>
+            <li class="abstract">The <a href="http://www.icm.tu-bs.de/ag_algebra/software/small/">Small Groups Library</a> is a library of groups of certain &quot;small&quot; orders. The groups are sorted by their orders and they are listed up to isomorphism; that is, for each of the available orders a complete and irredundant list of isomorphism type representatives of groups is given. For example, the library contains all groups of order at most 2000 except 1024, all groups of cube-free order at most 50000 and all groups of order dividing <i>p</i><sup>6</sup> for all primes <i>p</i>. The talk gives a survey on the construction and the facilities of this library. The small groups library is a joint project
+with Hans Ulrich Besche and Eamonn O'Brien as well as other contributors.</li>
+        </ul>
+    </li>
+    <li>
+        <ul class="talk">
+            <li class="workshopspeaker"><a href="https://www.city.ac.uk/people/academics/yang-hui-he">Yang-Hui He</a> (City and Oxford)</li>
+            <li class="title">Universes as Big Data: Superstrings, Calabi-Yau Manifolds and Machine Learning</li>
+            <li class="abstract">We review how historically the problem of string phenomenology lead theoretical physics first to algebraic/differential geometry, and then to computational geometry, and now to data science and AI. With the concrete playground of the Calabi-Yau landscape, accumulated by the collaboration of physicists, mathematicians and computer scientists over the last 4 decades, we show how the latest techniques in machine-learning can help explore problems of physical and mathematical interest.</li>
+			<li><a href="https://videoalbum59f7f8abc4694903b3b1f0a4b1f23fcc91005-master.s3-eu-west-1.amazonaws.com/public/upload/737f5773-74c8-4ef4-9e78-9d39d1f0491d.mp4">Video</a>, <a href="pdf/He.pdf">Slides</a></li>
+        </ul>
+    </li>
+    <li>
+        <ul class="talk">
+            <li class="workshopspeaker"><a href="http://fredrikj.net">Fredrik Johansson</a> (INRIA Bordeaux)</li>
+            <li class="title">Fungrim: a symbolic library for mathematical functions</li>
+            <li class="abstract">We present the Mathematical Functions Grimoire (Fungrim), a <a href="http://fungrim.org">website</a> and database of formulas, theorems and tables for mathematical functions. A central goal of this project is to represent all data in semantic and fully computer-readable form. For instance, computer algebra systems may use formulas in Fungrim as rewrite rules to simplify expressions or prove theorems involving special functions or real numbers. As part of this effort, we have developed a new mathematical description language (the Grim formula language) and a symbolic computation library, Pygrim, used as the backend and main development tool for Fungrim. We discuss the design, implementation and testing of these projects, prospects of scaling the database, and potential applications.</li>
+			<li><a href="https://www.youtube.com/watch?v=cToIRNbpiLE">Video</a>, <a href="pdf/Johansson.pdf">Slides</a></li>
+        </ul>
+    </li>
+    <li>
+        <ul class="talk">
+            <li class="workshopspeaker"><a href="https://www2.mathematik.tu-darmstadt.de/~paffenholz/">Andreas Paffenholz</a> (TU Darmstadt)</li>
+            <li class="title">polyDB: A database for geometric objects based on MongoDB</li>
+            <li class="abstract"><a href="https://polydb.org">polyDB</a> is a database for geometric objects with a growing set of collections. The project originated as an extension to the software polymake. It shares some conceptual ideas with polymake, and it uses the same JSON format for its data, but can be used completely independently, either by accessing it directly via a MongoDB client or driver, via a REST interface, or our web interface at polydb.org. The database is based on MongoDB and uses JSON as data format for its collections. It uses JSON schemas for the structural description of documents in a collection. The schema controls available entries in documents, their format, and their mathematical type. Meta information is stored for each collection, and it allows access control at collection level.</br>
+
+In my talk I will explain the background of polyDB, introduce the structure of data, and discuss the data model used. A NoSQL database like MongoDB supports our pupose quite well, but also has shortcomings if used for data from mathematics, which I will briefly address. I will show options to access the data, querying the data from a mathematical perspective, and ways to use it in computer algebra systems. For this, I will use the existing interface to polymake as my example.</li>
+        </ul>
+    </li>
+    <li>
+        <ul class="talk">
+            <li class="workshopspeaker">Giuseppe Pitton (Imperial College London)</li>
+            <li class="title">Database tools for the large scale computation of maximally mutable Laurent polynomials</li>
+            <li class="abstract">Fano polytopes are a family of integral lattice polytopes whose only interior point is the origin of the lattice.
+If the dual <i>P</i><sup>*</sup> of a Fano polytope <i>P</i> is itself an integral lattice polytope, we call <i>P</i> a reflexive Fano polytope. Reflexive Fano polytopes have important applications in toric geometry. Moreover, <a href="http://dx.doi.org/10.1090/proc/12876">recent results</a> in Mirror Symmetry showed that it is possible to find deformation equivalent families of Fano varieties by <a href="http://dx.doi.org/10.3842/SIGMA.2012.094">computing</a> some Laurent polynomials, called maximally-mutable Laurent polynomials, which are naturally associated to reflexive Fano polytopes. Kreuzer and Skarke produced a list of <a href="http://dx.doi.org/10.4310/atmp.2000.v4.n6.a2">four-dimensional reflexive Fano polytopes</a> which consists of 473&nbsp;800&nbsp;776 entries. In this talk, I will illustrate database/HPC tools developed to compute maximally-mutable Laurent polynomials for some interesting families of reflexive Fano polytopes in dimension 4. The massive scale of the Kreuzer and Skarke database requires a fast, robust interface with the HPC infrastructure used for carrying out the polynomial computations. This is joint work with Alexander Kasprzyk and Tom Coates.</li>
+			<li><a href="pdf/Pitton.pdf">Slides</a></li>
+        </ul>
+    </li>
+    <li>
+        <ul class="talk">
+            <li class="workshopspeaker"><a href="https://math.mit.edu/~drew/">Andrew Sutherland</a> (MIT)</li>
+            <li class="title">The L-functions and Modular Forms Database</li>
+            <li class="abstract">The <a href="https://www.lmfdb.org">L-functions and Modular Forms Database</a> (LMFDB) is a large database of mathematical objects that arise in number theory, including tables of number fields, elliptic curves, modular forms, and related objects.  Its primary goal is to make explicit the connections between these objects predicted by the Langlands program, which are mediated by L-functions.  The LMFDB is the product of an ongoing international collaboration with more than 100 participants that has become an important resource for researchers and students in number theory and many adjacent fields.  In this talk I will give an overview of the LMFDB and discuss some of the mathematical, computational, and infrastructural challenges that arose during its development and the ways in which we were able to overcome them.</li>
+			<li><a href="https://www.youtube.com/watch?v=6F1tMoPQA0g">Video</a>, <a href="pdf/Sutherland.pdf">Slides</a></li>
+        </ul>
+    </li>
+</ul>
+
+<!-- Programme -->
+<div class="schedule">
+<h1 class="title">Schedule for the Live Discussions</h1>
+<p>
+	All times are in CEST.
+</p>
+<p>
+<table>
+	<tr>
+		<td class="empty"></td>
+		<td class="heading">Monday, July 13</td>
+		<td class="heading">Tuesday, July 14</td>
+	</tr>
+	<tr class="odd">
+		<td class="time">16:30-16:40</td>
+		<td>Yang-Hui He</td>
+		<td>Bettina Eick</td>
+	</tr>
+	<tr>
+		<td class="time">16:40-16:45</td>
+		<td>Break</td>
+		<td>Break</td>
+	</tr>
+	<tr class="odd">
+		<td class="time">16:45-16:55</td>
+		<td>Andrew Sutherland</td>
+		<td>Giuseppe Pitton</td>
+	</tr>
+	<tr>
+		<td class="time">16:55-17:00</td>
+		<td>Break</td>
+		<td>Break</td>
+	</tr>
+	<tr class="odd">
+		<td class="time">17:00-17:10</td>
+		<td>Fredrik Johansson</td>
+		<td>Andreas Paffenholz</td>
+	</tr>
+</table>
+</p>
+</div>
+
+<!-- Finished -->
+</body>
+</html>

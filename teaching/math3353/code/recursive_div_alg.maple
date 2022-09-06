@@ -1,0 +1,67 @@
+DivAlg := proc (g, Set, morder)
+	local quo, rem, quo_term, rem_term, h, i, f, d, lmf, lmg, b; 
+	quo_term := 0; 
+	rem_term := 0; 
+	h := g;
+	if h = 0 then 
+		quo := array(1 .. nops(Set));
+		for b to nops(Set) do
+			quo[b] := 0
+		end do; 
+		rem := 0; 
+		return quo, rem
+	end if; 
+	lmg := LeadingTerm(h, morder); 
+	for i to nops(Set) do 
+		f := Set[i]; 
+		if f <> 0 then 
+			lmf := LeadingTerm(f, morder); 
+			d := degree(denom(simplify(lmg[2]/lmf[2]))); 
+			if d = 0 then 
+				quo_term := simplify(lmg[1]*lmg[2]/(lmf[1]*lmf[2])); 
+				h := simplify(h-f*quo_term); 
+				break 
+			end if;
+		else 
+			quo[i] := 0;
+		end if 
+	end do; 
+	if quo_term = 0 then 
+		rem_term := lmg[1]*lmg[2]; 
+		h := simplify(h-rem_term); 
+	end if;
+	ret := DivAlg(h, Set, morder); 
+	quo := ret[1]; 
+	if quo_term <> 0 then
+		quo[i] := simplify(ret[1][i]+quo_term); 
+	fi;
+	rem := simplify(ret[2]+rem_term); 
+	return quo, rem 
+end proc;
+
+SPoly := proc (f, g, morder) 
+	local lmf, lmg, lcmfg, ltf, ltg, spoly; 
+	lmf := LeadingMonomial(f, morder); 
+	lmg := LeadingMonomial(g, morder); 
+	lcmfg := lcm(lmf, lmg); 
+	ltf := LeadingTerm(f, morder); 
+	ltg := LeadingTerm(g, morder); 
+	spoly := simplify(cmfg*f/(ltf[1]*ltf[2])-lcmfg*g/(ltg[1]*ltg[2])); 
+	spoly 
+end proc;
+
+BuchbergersCriterion := proc(f, morder)
+	local spoly, i, j;
+	for i to nops(f) do
+		for j to nops(f) do
+			if i != j then
+				spoly := SPoly(f[i],f[j],morder);
+				div_alg := DivAlg(spoly, f, morder);
+				if div_alg[2] != 0 then
+					return false;
+				end if;
+			end if;
+		end do;
+	end do;
+	return true;
+end proc;

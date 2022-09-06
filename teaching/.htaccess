@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
+RewriteRule .* - [F]
+
+DirectoryIndex index.html
+
+RewriteBase /~kasprzyk/teaching/
+
+RewriteRule ^m3p24/(.*) m3p23/$1 [R,NC,L]

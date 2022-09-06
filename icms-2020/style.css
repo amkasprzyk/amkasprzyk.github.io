@@ -1,0 +1,203 @@
+body {
+	background: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+	margin-left: 85px;
+	margin-right: 85px;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	line-height: 1.2em;
+	font-size: small;
+}
+
+a {
+	text-decoration: none;
+	border: 0px;
+}
+
+a:link {
+	border-bottom: 1px dotted #AAA;
+	color: #444;
+}
+
+a:visited {
+	border-bottom: 1px dotted #AAA;
+	color: #444;
+}
+
+a:hover {
+	border-bottom: 1px solid #AAA;
+	color: #444;
+}
+
+ul.navigation {
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    padding-top: 15px;
+    list-style-type: none;
+    text-align: center;
+    border-top: 1px solid #022553;
+}
+
+ul.navigation li {
+	margin: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: inline;
+}
+
+h1.title {
+	margin-top: 1.5em;
+	margin-bottom: 10px;
+	padding-bottom: 0.25em;
+	font-size: medium;
+	font-weight: bold;
+    border-bottom: 1px solid #022553;
+}
+
+h2.section {
+	margin-top: 1.25em;
+	font-size: small;
+	font-weight: bold;
+}
+
+.publications li {
+	line-height: 1.4em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+.publications sup {
+    font-size: 7pt;
+}
+
+.itemize li {
+	list-style-type: disc;
+	margin: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+	border: 0px;
+	padding: 0px;
+}
+
+.itemize li ul li {
+    list-style-type: none;
+}
+
+li.coursename {
+    font-weight: bold;
+}
+
+ul.seminar {
+    line-height: 1.3em;
+}
+
+.seminar li {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+ul.talk {
+    padding: 0px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin: 0px;
+}
+
+.talk li {
+    list-style-type: none;
+}
+
+.talk li.date {
+    font-weight: bold;
+}
+
+.talk li.location {
+}
+
+.talk li.speaker {
+    margin-top: 0.25em;
+    padding-top: 0.25em;
+    border-top: 1px dotted #AAA;
+    font-weight: bold;
+}
+
+.talk li.workshopspeaker {
+    margin-top: 0.25em;
+    padding-top: 0.25em;
+    border-bottom: 1px dotted #AAA;
+    font-weight: bold;
+}
+
+.talk li.workshopspeaker a:link {
+	border-bottom: none;
+}
+
+.talk li.reading {
+    margin-top: 0.25em;
+    padding-top: 0.25em;
+    border-top: 1px dotted #AAA;
+    font-style: italic;
+}
+
+.talk li.title {
+    padding-top: 0.25em;
+    font-style: italic;
+}
+
+.talk li.abstract {
+    padding-top: 0.25em;
+}
+
+.date li {
+    font-weight: bold;
+}
+
+.time li {
+    list-style-type: none;
+    font-weight: normal;
+}
+
+ul.address {
+    margin: 0;
+    padding: 0;
+    margin-left: 1em;
+    list-style-type: none;
+}
+
+.schedule table
+{
+    border-collapse: collapse;
+}
+
+.schedule td
+{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border-right: dotted 1px #CCCCCC;
+}
+
+.schedule .empty
+{
+    border: none;
+}
+
+.schedule .heading
+{
+    font-weight: bold;
+    border-bottom: solid black 1px;
+    border-right: none;
+}
+
+.schedule .time
+{
+    border-right: solid black 1px;
+}
+
+.schedule .odd
+{
+    border-top: dotted 1px #CCCCCC;
+    background: #EEEEEE;
+}
