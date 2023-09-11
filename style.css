@@ -62,6 +62,15 @@ h1.title {
     border-bottom: 1px solid #022553;
 }
 
+h1.title a:link {
+    border-bottom: none;
+    color: black;
+}
+
+h1.title a:hover {
+    color: #444;
+}
+
 h2.section {
 	margin-top: 1.25em;
 	font-size: small;
@@ -170,4 +179,41 @@ ul.address {
     padding: 0;
     margin-left: 1em;
     list-style-type: none;
+}
+
+.schedule table
+{
+    border-collapse: collapse;
+}
+
+.schedule td
+{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border-right: dotted 1px #CCCCCC;
+}
+
+.schedule .empty
+{
+    border: none;
+}
+
+.schedule .heading
+{
+    font-weight: bold;
+    border-bottom: solid black 1px;
+    border-right: none;
+}
+
+.schedule .time
+{
+    border-right: solid black 1px;
+}
+
+.schedule .odd
+{
+    border-top: dotted 1px #CCCCCC;
+    background: #EEEEEE;
 }
