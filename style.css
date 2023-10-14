@@ -53,6 +53,22 @@ ul.navigation li {
 	display: inline;
 }
 
+ul.topnavigation {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    list-style-type: none;
+    text-align: center;
+}
+
+ul.topnavigation li {
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline;
+}
+
 h1.title {
 	margin-top: 1.5em;
 	margin-bottom: 10px;
