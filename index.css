@@ -137,6 +137,12 @@ li#phone
     color: black;
 }
 
+li#email
+{
+    margin-top: 10px;
+    color: black;
+}
+
 img#email
 {
     margin-top: 10px;
